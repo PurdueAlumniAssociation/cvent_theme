@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/PurdueAlumniAssociation/cvent_theme/issues"
   },
-  "homepage": "https://github.com/PurdueAlumniAssociation/cvent_theme#readme"
+  "homepage": "https://github.com/PurdueAlumniAssociation/cvent_theme#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  }
 }

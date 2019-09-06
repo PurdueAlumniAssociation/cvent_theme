@@ -7,7 +7,6 @@ const sass = require('gulp-sass');
 const cssnano = require('gulp-cssnano');
 const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
-const merge = require('merge-stream');
 
 // sass
 gulp.task('sass', function () {

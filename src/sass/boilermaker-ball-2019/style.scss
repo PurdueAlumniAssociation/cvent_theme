@@ -1,31 +1,24 @@
-$section-header-color: #6E8EA5;
-$h1-color: #3C5F74;
-$h2-background-color: #aad5ee;
-$h3-color: #37769F;
+@import "colors";
 
-$tan: #e9dfbb;
-/*
-ID#:  266
-Name: Simplicity
-*/
 html {
     height: 100%;
 }
 
 body {
     color: #fff;
-    //background: #fff url("images/page_bg.gif") fixed;
     background-repeat: repeat !important;
 }
 
-div.container-1 {
-    min-width: 950px;
-    width: 100%;
-    padding-top: 30px;
-}
+div {
+    &.container-1 {
+        min-width: 950px;
+        width: 100%;
+        padding-top: 30px;
+    }
 
-div.container-2 {
-    padding-top: 30px;
+    &.container-2 {
+        padding-top: 30px;
+    }
 }
 
 /* Typography
@@ -37,6 +30,21 @@ h1 {
     color: $h1-color;
     line-height: 1em;
     z-index: 1000;
+    margin: 1em 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 1em 0;
+}
+
+h3 {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 1em 0;
+    color: $h3-color;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 div.single-column.dropdown h1,
@@ -62,20 +70,6 @@ h2.section-header span {
     padding: 0 0 0 5px;
     display: block;
     width: 96.5%;
-}
-
-h2 {
-    font-weight: bold;
-    font-size: 1.1em;
-}
-
-h3 {
-    font-size: 1em;
-    font-weight: bold;
-    margin-bottom: 1em;
-    color: $h3-color;
-    text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 /* Text elements */
@@ -106,6 +100,17 @@ a:hover {
 
 /* Layout
 -------------------------------------------------------------- */
+
+.container {
+    width: auto;
+}
+
+.content-block {
+    & img {
+        max-width: 100%;
+        height: auto;
+    }
+}
 div.normal div.header {
     margin: 0 20px;
     max-width: 740px;
@@ -2173,3 +2178,5 @@ div.agenda-advanced-search-content {
     background: #fff;
     border: solid 1px #666666;
 }
+
+@import "customizations";
